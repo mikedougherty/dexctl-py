@@ -89,7 +89,7 @@ class ClickOptions:
 @ClickOptions.tls_cert
 @ClickOptions.tls_key
 @click.pass_context
-def cli(
+def main(
     ctx: click.Context = None,
     ca_cert: typing.BinaryIO = None,
     tls_cert: typing.BinaryIO = None,
@@ -101,7 +101,7 @@ def cli(
     )
 
 
-@cli.command()
+@main.command()
 @ClickOptions.namespace
 @ClickOptions.secret_name
 @ClickOptions.secret_namespace
@@ -133,7 +133,7 @@ def create(
     # TODO: make sure create is successful
 
 
-@cli.command()
+@main.command()
 @ClickOptions.client_definition
 @ClickOptions.namespace
 @ClickOptions.secret_name
@@ -173,4 +173,4 @@ def delete(
 
 
 if __name__ == "__main__":
-    cli()
+    main()
