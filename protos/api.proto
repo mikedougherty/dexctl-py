@@ -1,3 +1,4 @@
+// Retrieved from https://github.com/dexidp/dex/blob/3693b74791f4e713b703b15ac06aff72090aad8c/api/api.proto
 syntax = "proto3";
 option java_package = "com.coreos.dex.api";
 
