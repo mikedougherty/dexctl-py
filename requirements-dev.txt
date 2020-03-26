@@ -1,0 +1,6 @@
+-r requirements.txt
+
+black==19.10b0
+mccabe==0.6.1
+pylint==2.4.4
+toml==0.10.0
